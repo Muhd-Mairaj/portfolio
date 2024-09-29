@@ -1,9 +1,20 @@
-# theme: jekyll-theme-cayman
-title: Mairaj's Portfolio
-description: My portfolio of projects
+# # theme: jekyll-theme-cayman
+# title: Mairaj's Portfolio
+# description: My portfolio of projects
 
-# remote_theme: pages-themes/cayman@v0.2.0
+# # remote_theme: pages-themes/cayman@v0.2.0
 remote_theme: pages-themes/slate@v0.2.0
-plugins:
-- jekyll-remote-theme
+# plugins:
+# - jekyll-remote-theme
 
+title: Muhammad Mairaj
+description: > # this means to ignore newlines until "baseurl:"
+  A passionate developer specializing in web development, mobile apps, and competitive programming. Explore my work!
+# theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+author: 
+  name: Muhammad Mairaj
+  email: youremail@example.com
