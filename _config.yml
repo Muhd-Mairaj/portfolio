@@ -1,4 +1,7 @@
 # theme: jekyll-theme-cayman
 remote_theme: pages-themes/slate@v0.2.0
+title: Mairaj's Portfolio
+description: My portfolio of projects
 plugins:
 - jekyll-remote-theme
+
