@@ -1,0 +1,26 @@
+# Jekyll specific files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Gemfile specific files
+Gemfile.lock
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Bundler config (optional if you use Bundler to manage Ruby gems)
+.bundle/
+
+# GitHub Pages configuration files (optional if you have any)
+*.yml
