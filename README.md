@@ -20,7 +20,7 @@ Feel free to check out my latest projects and get in touch!
     - ✅ All course names are in **English** , making it especially helpful for new students 🌟.
     - ✅ It includes **lecturer names** 🧑‍🏫, so you’ll know exactly who’s teaching each class. (currently only for fsktm and fac. engineering)
     - ✅ Covers a **wide range of courses** 📚, so that it is versatile.
-- **Website:** [***https://mmscheduler.netlify.app***](https://mmscheduler.netlify.app)
+- **Website:** [***https://mmscheduler.vercel.app***](https://mmscheduler.vercel.app)
 - **Technologies used**: Next.js, React.js, Python, Selenium
 
 ### 2. Restaurant POS System
