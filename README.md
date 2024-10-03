@@ -7,13 +7,13 @@ Welcome to my portfolio website! I'm Muhammad Mairaj, a passionate developer wit
 ## About Me
 I started coding in 2020 and since then have delved into various fields like:
 - **Frontend & Backend Development**: Using technologies such as React, Express.js, Node.js, Next.js, MongoDB, PostgresSQL, Flask, and Django.
-    - Recently, I worked on a full-scale restaurant ordering and management system which is in operation at KH SHawarma, Engineering Faculty, Universiti Malaya. [KH Shawarma Project](#restaurant-pos-system).
-    - I also developed a [scheduler application](#mmscheduler) aimed at helping new Universiti Malaya students in planning their courses.
+    - Recently, I worked on a full-scale restaurant ordering and management system which is in operation at KH SHawarma, Engineering Faculty, Universiti Malaya. [KH Shawarma Project](#2-restaurant-pos-system).
+    - I also developed a [scheduler application](#1-mmscheduler) aimed at helping new Universiti Malaya students in planning their courses.
       <br>
       <img src="khshawarma_image.png" alt="KH Shawarma" height="500"/>
       <img src="mmschdeuler image.jpeg" alt="MM Scheduler" height="500"/>
 - **Desktop & Mobile Development**: Developed applications in Python (Tkinter - Desktop) and Java (Android).
-    - Recently, I developed [Material Calculator](#material-calculator) for a local Steel Production Factory.
+    - Recently, I developed [Material Calculator](#3-material-calculator) for a local Steel Production Factory.
 - **Competitive Programming**: Regularly participate in coding challenges.
     - Most recently, I was the **CHAMPION** of PLN 2024 Closed Category
       <br>
@@ -55,6 +55,7 @@ Feel free to check out my latest projects and get in touch!
 
 ### 5. Discord Bot
 <small>*June 2023 - July 2023*</small>
+
 
 ### 6. Item Tracker / TODO List App
 <small>*Dec 2022 - Jan 2023*</small>
