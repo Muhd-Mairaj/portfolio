@@ -2,18 +2,18 @@
 
 Welcome to my portfolio website! I'm Muhammad Mairaj, a passionate developer with expertise in web development, competitive programming, and mobile app development. I specialize in creating efficient, scalable, and user-friendly applications.
 
-[(Jump to my recent projects)](#Projects)
+[(Jump to my recent projects)](#projects)
 
 ## About Me
 I started coding in 2020 and since then have delved into various fields like:
 - **Frontend & Backend Development**: Using technologies such as React, Express.js, Node.js, Next.js, MongoDB, PostgresSQL, Flask, and Django.
-    - Recently, I worked on a full-scale restaurant ordering and management system which is in operation at KH SHawarma, Engineering Faculty, Universiti Malaya. [KH Shawarma Project](#Restaurant-POS-System).
-    - I also developed a [scheduler application](#MMScheduler) aimed at helping new Universiti Malaya students in planning their courses.
+    - Recently, I worked on a full-scale restaurant ordering and management system which is in operation at KH SHawarma, Engineering Faculty, Universiti Malaya. [KH Shawarma Project](#restaurant-pos-system).
+    - I also developed a [scheduler application](#mmscheduler) aimed at helping new Universiti Malaya students in planning their courses.
       <br>
       <img src="khshawarma_image.png" alt="KH Shawarma" height="500"/>
       <img src="mmschdeuler image.jpeg" alt="MM Scheduler" height="500"/>
 - **Desktop & Mobile Development**: Developed applications in Python (Tkinter - Desktop) and Java (Android).
-    - Recently, I developed [Material Calculator](#Material-Calculator) for a local Steel Production Factory.
+    - Recently, I developed [Material Calculator](#material-calculator) for a local Steel Production Factory.
 - **Competitive Programming**: Regularly participate in coding challenges.
     - Most recently, I was the **CHAMPION** of PLN 2024 Closed Category
       <br>
@@ -53,8 +53,12 @@ Feel free to check out my latest projects and get in touch!
 <small>*May 2024 - June 2024*</small>
 
 
-### 5. Halal Bot
+### 5. Discord Bot
 <small>*June 2023 - July 2023*</small>
+
+### 6. Item Tracker / TODO List App
+<small>*Dec 2022 - Jan 2023*</small>
+
 
 ---
 
