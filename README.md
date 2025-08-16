@@ -18,6 +18,7 @@ I started coding in 2020 and since then have delved into various fields like:
     <br>
     <img src="farmerpal_app.png" alt="FarmerPal App" height="300" width="150"/>
     <img src="farmerpal_app_2.png" alt="FarmerPal App" height="300" width="150"/>
+    <br>
     <img src="farmerpal_app_3.png" alt="FarmerPal App" height="300" width="150"/>
     <img src="farmerpal_app_4.png" alt="FarmerPal App" height="300" width="150"/>
     - I also worked on a POS System with react-native.
