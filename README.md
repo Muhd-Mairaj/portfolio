@@ -15,12 +15,11 @@ I started coding in 2020 and since then have delved into various fields like:
 
 - **Desktop & Mobile Development**: Developed applications in Python (Tkinter - Desktop) and Java (Android) as well as cross platform applications with React-Native.
     - I worked on [FarmerPal](#2-farmerpal), an Android app that supports SDG 2: Zero Hunger by empowering farmers with tools for community engagement, knowledge sharing, and access to agricultural support. 
-    <br>
-    <img src="farmerpal_app.png" alt="FarmerPal App" height="300" width="150"/>
-    <img src="farmerpal_app_2.png" alt="FarmerPal App" height="300" width="150"/>
-    <br>
-    <img src="farmerpal_app_3.png" alt="FarmerPal App" height="300" width="150"/>
-    <img src="farmerpal_app_4.png" alt="FarmerPal App" height="300" width="150"/>
+        <br>
+        <img src="farmerpal_app.png" alt="FarmerPal App" height="300" width="150"/>
+        <img src="farmerpal_app_2.png" alt="FarmerPal App" height="300" width="150"/>
+        <img src="farmerpal_app_3.png" alt="FarmerPal App" height="300" width="150"/>
+        <img src="farmerpal_app_4.png" alt="FarmerPal App" height="300" width="150"/>
     - I also worked on a POS System with react-native.
     - Earlier, I developed a desktop application, [Material Calculator](#5-material-calculator-v2), for a local Steel Production Factory with python and tkinter.
 
