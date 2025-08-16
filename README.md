@@ -7,17 +7,25 @@ Welcome to my portfolio website! I'm Muhammad Mairaj, a passionate developer wit
 ## About Me
 I started coding in 2020 and since then have delved into various fields like:
 - **Frontend & Backend Development**: Using technologies such as React, Express.js, Node.js, Next.js, MongoDB, PostgresSQL, Flask, and Django.
-    - Recently, I worked on a full-scale restaurant ordering and management system which is in operation at KH SHawarma, Engineering Faculty, Universiti Malaya. [KH Shawarma Project](#2-restaurant-pos-system).
-    - I also developed a [scheduler application](#1-mmscheduler) aimed at helping new Universiti Malaya students in planning their courses.
+    - Recently, I worked on a full-scale restaurant ordering and management system which is in operation at KH SHawarma, Engineering Faculty, Universiti Malaya. [KH Shawarma Project](#3-restaurant-pos-system).
+    - I also developed a [scheduler application](#2-mmscheduler) aimed at helping new Universiti Malaya students in planning their courses.
       <br>
       <img src="khshawarma_image.png" alt="KH Shawarma" height="500"/>
       <img src="mmschdeuler image.jpeg" alt="MM Scheduler" height="500"/>
+
 - **Desktop & Mobile Development**: Developed applications in Python (Tkinter - Desktop) and Java (Android).
-    - Recently, I developed [Material Calculator](#3-material-calculator) for a local Steel Production Factory.
+    - Recently, I developed [Material Calculator](#4-material-calculator) for a local Steel Production Factory.
+
+- **Applied Machine Learning & Deep Learning**: Experienced in applying ML and DL techniques to real-world problems using Python frameworks such as TensorFlow, Keras, and scikit-learn.
+    - Recently, I worked on a [Memecoin Analysis Project](#1-memecoin-analysis-dashboard), which involved analysing social media sentiment and search trends for memecoins, correlating them with memecoin pricing data to predict future prices, as well as comparing memecoin data with traditional coins
+      <img src="memecoin_analysis.png" alt="Memecoin Analysis" height="400"/>
+    - Also experimented with deep learning models for **image recognition**, applying frameworks such as TensorFlow and PyTorch.
+
 - **Competitive Programming**: Regularly participate in coding challenges.
     - Most recently, I was the **CHAMPION** of PLN 2024 Closed Category
       <br>
-      <img src="pln_2024_champion.jpeg" alt="Champion PLN 2024" width="400"/>
+      <img src="pln_2024_champion.jpeg" alt="Champion PLN 2024" width="350"/>
+    - Secured 5th position in CodeNection 2024
     - Served as Technical Team Member for PEKOM Competitive Programming in Sem 2, 2023/24
 
 Feel free to check out my latest projects and get in touch!
