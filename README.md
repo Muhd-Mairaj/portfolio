@@ -72,7 +72,7 @@ An Android application designed to support **SDG 2: Zero Hunger**, providing a p
 - I worked with a team of 5 developers in developing a complete application for [KHShawarma](https://maps.app.goo.gl/J8JBKxdJpdGDEEcy5) at [Fakulti Kejuruteraan, Universiti Malaya](https://maps.app.goo.gl/BvfCVoxCW2ZFzW379), during the summer break 2024.
 - I learned a lot during this project working as the Co-Lead Backend Engineer and Lead Security Engineer for the project, from the latest in frontend and backend development, to security considerations, to collaborative team development with GitHub
 - **Website:** [***https://khshawarma.org***](https://khshawarma.org) (Please go to Engineering Faculty and try out the flow ;p)
-- **Technologies used**: MERN Stack
+- **Technologies used**: MERN Stack for website, React-Native for Kitchen side POS App
 
 ### 5. Material Calculator v2
 <small>*26 July 2024 - 5 Aug 2024*</small>
