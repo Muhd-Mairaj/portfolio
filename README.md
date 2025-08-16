@@ -26,7 +26,15 @@ Feel free to check out my latest projects and get in touch!
 
 ## Projects
 
-### 1. MMScheduler
+### 1. Memecoin Analysis Dashboard
+<small>*Apr 2025 - Jun 2025*</small>
+- An interactive dashboard built with **Streamlit** to analyze memecoin trends and performance.
+- Incorporated **machine learning models** for sentiment analysis and predictive insights on price movements.
+- Provided real-time visualizations, token comparisons, and market insights for experimental crypto analysis.
+- **GitHub:** [Memecoin-Dashboard](https://github.com/Muhd-Mairaj/MemeCoin-Dashboard)
+- **Technologies used**: Python, Streamlit, Pandas, Scikit-learn, Matplotlib
+
+### 2. MMScheduler
 <small>*17 Sept 2024 - 30 Sept 2024*</small>
 - A tool built to help Universiti Malaya students visualize and organize their timetables effectively.
     - ✅ All course names are in **English** , making it especially helpful for new students 🌟.
@@ -35,7 +43,7 @@ Feel free to check out my latest projects and get in touch!
 - **Website:** [***https://mmscheduler.vercel.app***](https://mmscheduler.vercel.app)
 - **Technologies used**: Next.js, React.js, Python, Selenium
 
-### 2. Restaurant POS System
+### 3. Restaurant POS System
 <small>*Aug 2024 - Sept 2024*</small>
 - A full-scale restaurant management system developed with integrated backend support for order tracking, inventory management, and reporting.
 - I worked with a team of 5 developers in developing a complete application for [KHShawarma](https://maps.app.goo.gl/J8JBKxdJpdGDEEcy5) at [Fakulti Kejuruteraan, Universiti Malaya](https://maps.app.goo.gl/BvfCVoxCW2ZFzW379), during the summer break 2024.
@@ -43,18 +51,22 @@ Feel free to check out my latest projects and get in touch!
 - **Website:** [***https://khshawarma.org***](https://khshawarma.org) (Please go to Engineering Faculty and try out the flow ;p)
 - **Technologies used**: MERN Stack
 
-### 3. Material Calculator
+### 4. Material Calculator
 <small>*26 July 2024 - 5 Aug 2024*</small>
 - A Desktop Application made for a local company that calculates the optimal amount of raw material required for steel production.
 - **GitHub:** [Material-Calculator](https://github.com/Muhd-Mairaj/Material-Calculator-2.0)
 - **Technologies used**: Python, Tkinter
 
-### 4. NBA Game Manager
+### 5. NBA Game Manager
 <small>*May 2024 - June 2024*</small>
+- A desktop application built with **Java Swing** to manage and simulate NBA games.
+- Users could create teams, manage rosters, track player stats, and simulate match outcomes.
+- Focused on implementing **object-oriented design** and GUI development for an interactive experience.
+- **Technologies used**: Java, Swing
 
-
-### 5. Discord Bot
+### 6. Discord Bot
 <small>*June 2023 - July 2023*</small>
+A custom discord bot with stylized announcements, quizes and more
 
 
 ### 6. Item Tracker / TODO List App
@@ -66,8 +78,8 @@ Feel free to check out my latest projects and get in touch!
 ## Skills
 
 - **Languages**: Java, Python, JavaScript, HTML/CSS, C
-- **Frameworks**: React.js, Django, Flask, Node.js
-- **Tools & Technologies**: Git, Selenium, Linux (Fedora KDE)
+- **Frameworks**: React.js, React-Native, Django, Medusa, Flask, Node.js
+- **Tools & Technologies**: Git, Selenium, Docker, Linux (Fedora KDE)
 - **Other Skills**: Web scraping, Database design, RESTful API development, Unit Testing, Linux system administration
 
 ---
