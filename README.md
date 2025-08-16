@@ -39,7 +39,7 @@ Feel free to check out my latest projects and get in touch!
 - A tool built to help Universiti Malaya students visualize and organize their timetables effectively.
     - ✅ All course names are in **English** , making it especially helpful for new students 🌟.
     - ✅ It includes **lecturer names** 🧑‍🏫, so you’ll know exactly who’s teaching each class.
-    - ✅ Covers a **wide range of courses** 📚, so that it is versatile for all students to use.
+    - ✅ Covers courses from all faculties 📚, so that it is versatile for all students to use.
 - **Website:** [***https://mmscheduler.vercel.app***](https://mmscheduler.vercel.app)
 - **Technologies used**: Next.js, React.js, Python, Selenium
 
