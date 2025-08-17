@@ -50,11 +50,12 @@ Feel free to check out my latest projects and get in touch!
 - **Technologies used**: Python, Streamlit, Pandas, Scikit-learn, Matplotlib
 
 ### 2. FarmerPal
+<small>*Nov 2024 - Jan 2025*</small>
 An Android application designed to support **SDG 2: Zero Hunger**, providing a platform for farmers to:
 - Connect with the community for support and collaboration  
 - Access information on diseases, crops, and best practices  
 - Engage in discussions through community posts and chat features  
-- **GitHub:** [Farmerpal]
+- **GitHub:** [Farmerpal](https://github.com/Mohammed-AlSharafi/FarmerPal)
 - **Tech Stack**: Java (Android Studio), Firebase  
 
 
