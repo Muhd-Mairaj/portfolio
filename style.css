@@ -3,14 +3,14 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #111118;
-  --bg-card: rgba(255, 255, 255, 0.03);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 255, 255, 0.15);
+  --bg-primary: #0d0d14;
+  --bg-secondary: #141420;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-hover: rgba(255, 255, 255, 0.18);
   --text-primary: #f1f5f9;
   --text-secondary: #94a3b8;
-  --text-muted: #475569;
+  --text-muted: #64748b;
   --accent-indigo: #6366f1;
   --accent-indigo-dim: rgba(99, 102, 241, 0.15);
   --accent-cyan: #22d3ee;
@@ -526,6 +526,7 @@ section.visible {
 .proj-badge-wip     { background: var(--accent-amber-dim);  color: var(--accent-amber);  border: 1px solid rgba(251,191,36,0.25); }
 .proj-badge-multi   { background: rgba(96,165,250,0.10);    color: var(--accent-blue);   border: 1px solid rgba(96,165,250,0.25); }
 .proj-badge-research{ background: rgba(244,114,182,0.10);   color: var(--accent-pink);   border: 1px solid rgba(244,114,182,0.25); }
+.proj-badge-fyp     { background: var(--accent-indigo-dim); color: var(--accent-indigo); border: 1px solid rgba(99,102,241,0.25); }
 
 .proj-link {
   font-size: 11px;
@@ -632,7 +633,7 @@ section.visible {
   border-radius: 20px;
   background: var(--chip-bg, rgba(255,255,255,0.05));
   color: var(--chip-color, var(--text-secondary));
-  border: 1px solid rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
   transition: border-color var(--transition);
 }
 
