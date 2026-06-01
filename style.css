@@ -3,7 +3,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg-primary: #111117;
+  --bg-primary: #16161f;
   --bg-secondary: #1a1a28;
   --bg-card: rgba(255, 255, 255, 0.07);
   --border: rgba(255, 255, 255, 0.13);
