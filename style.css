@@ -208,6 +208,16 @@ section.visible {
   padding: 80px 0;
 }
 
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .hero-inner {
   position: relative;
   z-index: 1;
@@ -713,6 +723,8 @@ section.visible {
   line-height: 1.5;
 }
 
+.achievement-has-photo { padding-right: 110px; }
+
 .achievement-photo {
   width: 80px;
   height: 80px;
@@ -724,6 +736,9 @@ section.visible {
   opacity: 0.7;
   border: 1px solid var(--border);
 }
+
+.achievement-card:nth-child(4) { grid-column: 1; }
+.achievement-card:nth-child(5) { grid-column: 2; }
 
 @media (max-width: 900px) { .achievements-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .achievements-grid { grid-template-columns: 1fr; } }
@@ -810,7 +825,7 @@ section.visible {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 480px;
+  max-width: 600px;
 }
 
 .contact-link {
