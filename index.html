@@ -175,6 +175,175 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
+      <p class="section-label">Work</p>
+      <h2 class="section-title">Projects</h2>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs" role="tablist">
+        <button class="filter-btn active" data-filter="all" onclick="filterProjects(this)">All</button>
+        <button class="filter-btn" data-filter="ai" onclick="filterProjects(this)">AI / ML</button>
+        <button class="filter-btn" data-filter="web" onclick="filterProjects(this)">Web</button>
+        <button class="filter-btn" data-filter="mobile" onclick="filterProjects(this)">Mobile</button>
+      </div>
+
+      <!-- Featured projects (larger cards) -->
+      <div class="projects-featured">
+
+        <!-- VisaSystem -->
+        <div class="proj-card proj-card-featured" data-categories="ai web">
+          <div class="proj-card-header">
+            <div class="proj-badges">
+              <span class="proj-badge proj-badge-ai">AI · FYP</span>
+              <span class="proj-badge proj-badge-wip">In Progress</span>
+            </div>
+            <div class="proj-links">
+              <span class="proj-link-na">Private Repo</span>
+            </div>
+          </div>
+          <h3 class="proj-title">VisaSystem</h3>
+          <p class="proj-desc">Centralized international student visa management system for Universiti Malaya. Features an AI-powered RAG chatbot for Level 1 visa inquiries, OCR auto-extraction of passport data, automated cron jobs for expiry deadline tracking, and multi-role RBAC across Student, Visa Staff, Faculty, and Insurance actors.</p>
+          <div class="proj-highlights">
+            <span class="proj-highlight">RAG Chatbot</span>
+            <span class="proj-highlight">AI OCR</span>
+            <span class="proj-highlight">RBAC</span>
+            <span class="proj-highlight">Background Jobs</span>
+            <span class="proj-highlight">UAT</span>
+            <span class="proj-highlight">Unit + Integration Tests</span>
+          </div>
+          <div class="exp-tags" style="margin-top: 14px;">
+            <span class="tag">Django</span><span class="tag">React</span><span class="tag">PostgreSQL</span>
+            <span class="tag">Celery</span><span class="tag">LLM / RAG</span>
+          </div>
+        </div>
+
+        <!-- KH Shawarma -->
+        <div class="proj-card proj-card-featured" data-categories="web mobile">
+          <div class="proj-card-header">
+            <div class="proj-badges">
+              <span class="proj-badge proj-badge-prod">Production</span>
+              <span class="proj-badge proj-badge-multi">Web + Mobile</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://khshawarma.org" target="_blank" rel="noopener" class="proj-link">↗ khshawarma.org</a>
+            </div>
+          </div>
+          <h3 class="proj-title">KH Shawarma POS System</h3>
+          <p class="proj-desc">Real-time restaurant ordering and management system for KH Shawarma, Engineering Faculty UM. Supported ~1,000 daily orders within 2 months. Built as Co-Lead Backend Engineer and Lead Security Engineer in a 5-person team — delivered a customer web app and a React-Native kitchen POS Android app.</p>
+          <div class="proj-highlights">
+            <span class="proj-highlight">WebSocket real-time orders</span>
+            <span class="proj-highlight">Kitchen POS App</span>
+            <span class="proj-highlight">Security hardening</span>
+            <span class="proj-highlight">~1K daily orders</span>
+          </div>
+          <div class="exp-tags" style="margin-top: 14px;">
+            <span class="tag">MongoDB</span><span class="tag">Express</span><span class="tag">React</span>
+            <span class="tag">Node.js</span><span class="tag">React-Native</span><span class="tag">WebSockets</span>
+          </div>
+        </div>
+
+        <!-- DevTrackr -->
+        <div class="proj-card proj-card-featured" data-categories="ai web">
+          <div class="proj-card-header">
+            <div class="proj-badges">
+              <span class="proj-badge proj-badge-ai">AI</span>
+              <span class="proj-badge proj-badge-wip">In Progress</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/Muhd-Mairaj/DevTrackr" target="_blank" rel="noopener" class="proj-link">↗ GitHub</a>
+            </div>
+          </div>
+          <h3 class="proj-title">DevTrackr</h3>
+          <p class="proj-desc">Developer productivity platform that auto-generates professional logbooks by syncing Toggl time tracking entries with GitHub commit/PR activity, then producing AI-powered daily and weekly work summaries via a provider-agnostic LLM interface (Gemini API implemented).</p>
+          <div class="proj-highlights">
+            <span class="proj-highlight">Gemini API summaries</span>
+            <span class="proj-highlight">GitHub integration</span>
+            <span class="proj-highlight">Toggl sync</span>
+            <span class="proj-highlight">Provider-agnostic LLM</span>
+          </div>
+          <div class="exp-tags" style="margin-top: 14px;">
+            <span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">TypeScript</span>
+            <span class="tag">PostgreSQL</span><span class="tag">Gemini API</span><span class="tag">Docker</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Other projects grid -->
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="proj-card-sm" data-categories="web mobile">
+          <div class="proj-card-header">
+            <span class="proj-badge proj-badge-prod">Live</span>
+            <a href="https://iftaar-coord.netlify.app" target="_blank" rel="noopener" class="proj-link">↗ iftaar-coord.netlify.app</a>
+          </div>
+          <h4 class="proj-title-sm">Iftaar Coordination App</h4>
+          <p class="proj-desc-sm">Bilingual (English/Arabic) platform coordinating Ramadan iftar donations between mosques and restaurants. RTL support, Supabase auth, server actions.</p>
+          <div class="exp-tags" style="margin-top: 10px;">
+            <span class="tag">Next.js 14</span><span class="tag">Supabase</span><span class="tag">Tailwind</span><span class="tag">i18n</span>
+          </div>
+        </div>
+
+        <div class="proj-card-sm" data-categories="web mobile">
+          <div class="proj-card-header">
+            <span class="proj-badge proj-badge-research">Research</span>
+            <span class="proj-badge proj-badge-multi">Web + Mobile</span>
+          </div>
+          <h4 class="proj-title-sm">Hentian Komuniti</h4>
+          <p class="proj-desc-sm">Community-focused platform delivered within a Universiti Malaya research timeline. Led 2-dev team, managed client comms, defined architecture, and deployed a zero-cost production backend.</p>
+          <div class="exp-tags" style="margin-top: 10px;">
+            <span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">Realtime</span>
+          </div>
+        </div>
+
+        <div class="proj-card-sm" data-categories="web">
+          <div class="proj-card-header">
+            <span class="proj-badge proj-badge-prod">Live</span>
+            <a href="https://mmscheduler.vercel.app" target="_blank" rel="noopener" class="proj-link">↗ mmscheduler.vercel.app</a>
+          </div>
+          <h4 class="proj-title-sm">MMScheduler</h4>
+          <p class="proj-desc-sm">Timetable visualiser for Universiti Malaya students — all courses in English with lecturer names. Scraped and processed with Selenium.</p>
+          <div class="exp-tags" style="margin-top: 10px;">
+            <span class="tag">Next.js</span><span class="tag">React</span><span class="tag">Python</span><span class="tag">Selenium</span>
+          </div>
+        </div>
+
+        <div class="proj-card-sm" data-categories="ai">
+          <div class="proj-card-header">
+            <span class="proj-badge proj-badge-ai">AI / ML</span>
+            <a href="https://github.com/Muhd-Mairaj/MemeCoin-Dashboard" target="_blank" rel="noopener" class="proj-link">↗ GitHub</a>
+          </div>
+          <h4 class="proj-title-sm">Memecoin Analysis Dashboard</h4>
+          <p class="proj-desc-sm">Interactive Streamlit dashboard analysing memecoin trends with ML-based sentiment analysis and price movement predictions from social media and search data.</p>
+          <div class="exp-tags" style="margin-top: 10px;">
+            <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span>
+          </div>
+        </div>
+
+        <div class="proj-card-sm" data-categories="mobile">
+          <div class="proj-card-header">
+            <span class="proj-badge proj-badge-multi">Android</span>
+            <a href="https://github.com/Mohammed-AlSharafi/FarmerPal" target="_blank" rel="noopener" class="proj-link">↗ GitHub</a>
+          </div>
+          <h4 class="proj-title-sm">FarmerPal</h4>
+          <p class="proj-desc-sm">Android app supporting SDG 2: Zero Hunger — empowers farmers with community posts, disease/crop info, and agricultural support chat features.</p>
+          <div class="exp-tags" style="margin-top: 10px;">
+            <span class="tag">Java</span><span class="tag">Android Studio</span><span class="tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="proj-card-sm" data-categories="web">
+          <div class="proj-card-header">
+            <span class="proj-badge proj-badge-prod">Freelance</span>
+            <a href="https://github.com/Muhd-Mairaj/Material-Calculator-2.0" target="_blank" rel="noopener" class="proj-link">↗ GitHub</a>
+          </div>
+          <h4 class="proj-title-sm">Material Calculator v2</h4>
+          <p class="proj-desc-sm">Desktop application for a local steel production factory — calculates optimal raw material quantities for steel production runs.</p>
+          <div class="exp-tags" style="margin-top: 10px;">
+            <span class="tag">Python</span><span class="tag">Tkinter</span>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

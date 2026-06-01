@@ -4,4 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
     { threshold: 0.1 }
   );
   document.querySelectorAll('section:not(#hero)').forEach(s => observer.observe(s));
+
+  window.filterProjects = function(btn) {
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const featured = document.querySelectorAll('.proj-card-featured');
+    const grid = document.querySelectorAll('.proj-card-sm');
+
+    [...featured, ...grid].forEach(card => {
+      const cats = card.dataset.categories || '';
+      const show = filter === 'all' || cats.includes(filter);
+      card.style.display = show ? '' : 'none';
+    });
+  };
 });
