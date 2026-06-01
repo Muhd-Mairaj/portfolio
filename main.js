@@ -37,4 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   sections.forEach(s => navObserver.observe(s));
+
+  const hamburger = document.getElementById('nav-hamburger');
+  const navMenu = document.getElementById('nav-links');
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+  }
 });

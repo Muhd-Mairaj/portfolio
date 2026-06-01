@@ -19,7 +19,7 @@
   <nav id="nav">
     <div class="container nav-inner">
       <a href="#hero" class="nav-logo">MM</a>
-      <button class="nav-hamburger" aria-label="Menu" onclick="document.getElementById('nav-links').classList.toggle('open')">
+      <button class="nav-hamburger" aria-label="Menu" aria-expanded="false" id="nav-hamburger">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
@@ -185,7 +185,7 @@
       <h2 class="section-title">Projects</h2>
 
       <!-- Filter tabs -->
-      <div class="filter-tabs" role="tablist">
+      <div class="filter-tabs">
         <button class="filter-btn active" data-filter="all" onclick="filterProjects(this)">All</button>
         <button class="filter-btn" data-filter="ai" onclick="filterProjects(this)">AI / ML</button>
         <button class="filter-btn" data-filter="web" onclick="filterProjects(this)">Web</button>

@@ -885,3 +885,8 @@ footer {
 }
 
 .nav-links a.active { color: var(--text-primary); }
+
+@media (prefers-reduced-motion: reduce) {
+  section { transition: none; }
+  .proj-card:hover, .proj-card-sm:hover, .achievement-card:hover, .contact-link:hover { transform: none; }
+}
