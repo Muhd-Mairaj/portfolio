@@ -1,3 +1,9 @@
+# Local-only directories
+docs/
+infos/
+.superpowers/
+.remember/
+
 # Jekyll specific files
 _site/
 .sass-cache/
