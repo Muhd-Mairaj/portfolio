@@ -724,15 +724,16 @@ section.visible {
   line-height: 1.5;
 }
 
-.achievement-has-photo { padding-right: 110px; }
+.achievement-has-photo { padding-right: 122px; }
 
 .achievement-photo {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border-radius: var(--radius-sm);
   position: absolute;
-  bottom: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 16px;
   opacity: 0.7;
   border: 1px solid var(--border);
@@ -959,8 +960,8 @@ footer {
   /* Achievements */
   .achievement-rank { font-size: 28px; }
   .achievement-title { font-size: 13px; }
-  .achievement-has-photo { padding-right: 20px; }
-  .achievement-photo { width: 60px; height: 60px; }
+  .achievement-has-photo { padding-right: 96px; }
+  .achievement-photo { width: 72px; height: 72px; }
 
   /* Education */
   .edu-card { padding: 20px; }
