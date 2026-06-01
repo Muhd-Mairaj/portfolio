@@ -75,3 +75,119 @@ section.visible {
   color: var(--text-primary);
   margin-bottom: 40px;
 }
+
+/* NAV */
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: 60px;
+}
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--accent-indigo);
+  letter-spacing: -0.5px;
+  margin-right: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color var(--transition);
+}
+
+.nav-links a:hover { color: var(--text-primary); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  border: 1px solid transparent;
+}
+
+.btn-sm { padding: 6px 14px; font-size: 12px; }
+
+.btn-primary {
+  background: var(--accent-indigo);
+  color: #fff;
+  border-color: var(--accent-indigo);
+}
+
+.btn-primary:hover { background: #4f52d8; border-color: #4f52d8; }
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-secondary);
+  border-color: var(--border);
+}
+
+.btn-outline:hover { border-color: var(--border-hover); color: var(--text-primary); }
+
+#nav .btn {
+  background: var(--accent-indigo-dim);
+  color: var(--accent-indigo);
+  border-color: rgba(99, 102, 241, 0.3);
+  white-space: nowrap;
+}
+
+#nav .btn:hover { background: rgba(99, 102, 241, 0.25); }
+
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text-secondary);
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .nav-hamburger { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 15, 0.97);
+    flex-direction: column;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+    padding: 8px 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li a { display: block; padding: 12px 24px; font-size: 14px; }
+}

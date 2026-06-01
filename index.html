@@ -12,6 +12,19 @@
   <!-- NAV -->
   <nav id="nav">
     <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">MM</a>
+      <button class="nav-hamburger" aria-label="Menu" onclick="document.getElementById('nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="infos/Muhammad_Mairaj_Software_Engineering.pdf" target="_blank" rel="noopener" class="btn btn-sm">Resume</a>
     </div>
   </nav>
 
@@ -62,6 +75,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
