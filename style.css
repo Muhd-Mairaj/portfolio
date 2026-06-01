@@ -883,3 +883,5 @@ footer {
   font-size: 12px;
   color: var(--text-muted);
 }
+
+.nav-links a.active { color: var(--text-primary); }
