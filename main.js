@@ -45,5 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = navMenu.classList.toggle('open');
       hamburger.setAttribute('aria-expanded', isOpen);
     });
+
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
   }
 });

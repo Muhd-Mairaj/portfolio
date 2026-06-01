@@ -9,8 +9,8 @@
   --border: rgba(255, 255, 255, 0.13);
   --border-hover: rgba(255, 255, 255, 0.22);
   --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --text-secondary: #b8c5d4;
+  --text-muted: #8090a0;
   --accent-indigo: #6366f1;
   --accent-indigo-dim: rgba(99, 102, 241, 0.15);
   --accent-cyan: #22d3ee;
@@ -435,7 +435,7 @@ section.visible {
 .tag {
   font-size: 11px;
   font-weight: 500;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -720,7 +720,7 @@ section.visible {
 
 .achievement-detail {
   font-size: 12px;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   line-height: 1.5;
 }
 
@@ -905,4 +905,82 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   section { transition: none; }
   .proj-card:hover, .proj-card-sm:hover, .achievement-card:hover, .contact-link:hover { transform: none; }
+}
+
+/* ===================================================================
+   RESPONSIVE OVERRIDES
+   =================================================================== */
+
+/* 768px: tablet + mobile — supplement existing nav rules */
+@media (max-width: 768px) {
+  section { padding: 60px 0; }
+  .section-title { font-size: 24px; margin-bottom: 28px; }
+  .nav-inner { gap: 16px; }
+  #hero { padding: 60px 0; min-height: auto; }
+}
+
+/* 600px: supplement existing grid switches */
+@media (max-width: 600px) {
+  /* Fix: nth-child grid-column rules create an implicit 2nd column in 1-col grid */
+  .achievement-card:nth-child(4),
+  .achievement-card:nth-child(5) { grid-column: auto; }
+
+  /* Education header: stack vertically so GPA doesn't float right on narrow screens */
+  .edu-header { flex-direction: column; }
+  .edu-gpa { text-align: left; }
+}
+
+/* 480px: standard smartphones (375–414px) */
+@media (max-width: 480px) {
+  section { padding: 48px 0; }
+  .container { padding: 0 16px; }
+  .section-title { font-size: 20px; margin-bottom: 20px; }
+
+  /* Hero */
+  #hero { padding: 48px 0; }
+  .hero-chip { font-size: 11px; padding: 4px 12px; }
+  .hero-sub { font-size: 15px; margin-bottom: 28px; }
+  .hero-stats { gap: 14px; margin-bottom: 28px; }
+  .hero-stat-num { font-size: 17px; }
+  .hero-stat-lbl { font-size: 10px; }
+
+  /* Experience */
+  .timeline { padding-left: 18px; }
+  .exp-card { padding: 14px 16px; }
+  .exp-role { font-size: 14px; }
+  .exp-meta { font-size: 11px; }
+  .exp-bullets { padding-left: 14px; }
+  .exp-bullets li { font-size: 13px; }
+
+  /* Projects */
+  .filter-tabs { gap: 6px; }
+  .filter-btn { padding: 5px 12px; font-size: 11px; }
+
+  /* Achievements */
+  .achievement-rank { font-size: 28px; }
+  .achievement-title { font-size: 13px; }
+  .achievement-has-photo { padding-right: 20px; }
+  .achievement-photo { width: 60px; height: 60px; }
+
+  /* Education */
+  .edu-card { padding: 20px; }
+  .edu-degree { font-size: 15px; }
+  .edu-gpa-num { font-size: 26px; }
+
+  /* Contact */
+  .contact-links { max-width: 100%; }
+  .contact-link { padding: 12px 14px; gap: 10px; }
+  .contact-link-val { font-size: 12px; }
+
+  /* Footer */
+  .footer-inner { flex-direction: column; align-items: center; text-align: center; gap: 4px; }
+}
+
+/* 360px: compact phones */
+@media (max-width: 360px) {
+  .container { padding: 0 12px; }
+  .hero-stats { gap: 10px; }
+  .hero-stat-num { font-size: 15px; }
+  .exp-card { padding: 12px 14px; }
+  .btn { padding: 7px 12px; font-size: 12px; }
 }
