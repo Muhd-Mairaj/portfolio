@@ -727,3 +727,159 @@ section.visible {
 
 @media (max-width: 900px) { .achievements-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .achievements-grid { grid-template-columns: 1fr; } }
+
+/* EDUCATION */
+#education { background: var(--bg-secondary); }
+
+.edu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.edu-degree {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.edu-uni {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-pink);
+  margin-bottom: 4px;
+}
+
+.edu-period {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.edu-gpa {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.edu-gpa-num {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--accent-indigo);
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.edu-gpa-lbl {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.edu-courses-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+/* CONTACT */
+#contact { background: var(--bg-primary); }
+
+.contact-sub {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  max-width: 460px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 480px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.contact-link:hover {
+  border-color: var(--accent-indigo);
+  transform: translateX(4px);
+}
+
+.contact-link-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-indigo-dim);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-indigo);
+  flex-shrink: 0;
+}
+
+.contact-link-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-link-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-link-val {
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: color var(--transition);
+}
+
+.contact-link:hover .contact-link-val { color: var(--text-primary); }
+
+/* FOOTER */
+footer {
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: var(--text-muted);
+}
