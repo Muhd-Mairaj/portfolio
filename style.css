@@ -738,14 +738,67 @@ section.visible {
   border: 1px solid var(--border);
 }
 
-.achievement-card:nth-child(4) { grid-column: 1; }
-.achievement-card:nth-child(5) { grid-column: 2; }
+.achievement-card:nth-child(4) { grid-column: 2; }
 
 @media (max-width: 900px) { .achievements-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .achievements-grid { grid-template-columns: 1fr; } }
 
+/* CERTIFICATIONS */
+#certifications { background: var(--bg-secondary); }
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cert-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.cert-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+}
+
+.cert-issuer {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.cert-name {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.cert-subtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.cert-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+@media (max-width: 900px) { .certs-grid { grid-template-columns: 1fr; } }
+
 /* EDUCATION */
-#education { background: var(--bg-secondary); }
+#education { background: var(--bg-primary); }
 
 .edu-card {
   background: var(--bg-card);
@@ -813,7 +866,7 @@ section.visible {
 }
 
 /* CONTACT */
-#contact { background: var(--bg-primary); }
+#contact { background: var(--bg-secondary); }
 
 .contact-sub {
   font-size: 15px;
@@ -922,8 +975,7 @@ footer {
 /* 600px: supplement existing grid switches */
 @media (max-width: 600px) {
   /* Fix: nth-child grid-column rules create an implicit 2nd column in 1-col grid */
-  .achievement-card:nth-child(4),
-  .achievement-card:nth-child(5) { grid-column: auto; }
+  .achievement-card:nth-child(4) { grid-column: auto; }
 
   /* Education header: stack vertically so GPA doesn't float right on narrow screens */
   .edu-header { flex-direction: column; }
