@@ -50,12 +50,19 @@ ul { list-style: none; }
 
 section {
   padding: 80px 0;
+}
+
+/* Scroll-reveal is a progressive enhancement. The hidden initial state only
+   applies when JS is present to reveal sections (the `.js` flag is set in
+   <head>). Without JS — scrapers, reader modes, no-script users — content
+   renders fully visible instead of being stuck at opacity: 0. */
+.js section {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-section.visible {
+.js section.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -956,7 +963,8 @@ footer {
 .nav-links a.active { color: var(--text-primary); }
 
 @media (prefers-reduced-motion: reduce) {
-  section { transition: none; }
+  /* Show sections immediately — don't gate content behind a motion effect. */
+  .js section { opacity: 1; transform: none; transition: none; }
   .proj-card:hover, .proj-card-sm:hover, .achievement-card:hover, .contact-link:hover { transform: none; }
 }
 
@@ -1035,4 +1043,88 @@ footer {
   .hero-stat-num { font-size: 15px; }
   .exp-card { padding: 12px 14px; }
   .btn { padding: 7px 12px; font-size: 12px; }
+}
+
+/* ===================================================================
+   PRINT — make the whole page printable on paper / as a PDF.
+   The scroll-reveal leaves off-screen sections at opacity: 0, so they
+   print blank; here we force everything visible and swap the dark
+   theme for an ink-friendly light one.
+   =================================================================== */
+@media print {
+  /* Re-point the theme tokens to a light, readable palette. Inline
+     styles that reference these vars (hero stats, chips) pick this up
+     automatically, so accents become dark enough to read on white. */
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #ffffff;
+    --bg-card: #ffffff;
+    --border: #cccccc;
+    --border-hover: #cccccc;
+    --text-primary: #111111;
+    --text-secondary: #333333;
+    --text-muted: #555555;
+    --accent-indigo: #4338ca;  --accent-indigo-dim: transparent;
+    --accent-cyan: #0e7490;    --accent-cyan-dim: transparent;
+    --accent-purple: #6d28d9;  --accent-purple-dim: transparent;
+    --accent-amber: #b45309;   --accent-amber-dim: transparent;
+    --accent-green: #047857;   --accent-green-dim: transparent;
+    --accent-blue: #1d4ed8;
+    --accent-pink: #be185d;
+  }
+
+  html { scroll-behavior: auto; }
+  body { background: #fff; color: #111; }
+
+  /* Reveal every section regardless of scroll/JS state. */
+  section,
+  .js section,
+  .js section.visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  section { padding: 20px 0; }
+  #hero { min-height: auto; padding: 0 0 16px; }
+  #hero::before { display: none !important; }
+  .container { max-width: 100%; padding: 0; }
+
+  /* Drop interactive / decorative chrome that has no meaning on paper. */
+  #nav,
+  .nav-hamburger,
+  .hero-glow,
+  .filter-tabs,
+  .hero-ctas { display: none !important; }
+
+  /* Keep cards whole across page breaks and flatten dark-theme surfaces. */
+  .exp-card,
+  .proj-card,
+  .proj-card-sm,
+  .achievement-card,
+  .cert-card,
+  .edu-card,
+  .contact-link {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+
+  h1, h2, h3, h4 { page-break-after: avoid; }
+
+  /* Tags / chips / badges: outlined instead of tinted so they survive
+     grayscale printing. */
+  .tag,
+  .skill-chip,
+  .proj-highlight,
+  .proj-badge {
+    background: #fff !important;
+    border: 1px solid #bbb !important;
+    color: #222 !important;
+  }
+
+  /* Don't print color-on-color shadows or the achievement photo borders heavy. */
+  * { box-shadow: none !important; }
 }

@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Flag JS availability before first paint so the scroll-reveal can be a
+       progressive enhancement: content stays visible if JS never runs. -->
+  <script>document.documentElement.classList.add('js');</script>
   <meta name="description" content="Muhammad Mairaj | Full-Stack Engineer specializing in backend systems and AI-powered applications." />
   <meta property="og:title" content="Muhammad Mairaj | Full-Stack Engineer" />
   <meta property="og:description" content="Building production-grade backend systems and AI-powered applications. CGPA 3.95, PLN 2024 Champion, 10K+ user platform." />
@@ -11,7 +14,26 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Muhammad Mairaj | Full-Stack Engineer" />
   <title>Muhammad Mairaj | Full-Stack Engineer</title>
+  <link rel="canonical" href="https://muhd-mairaj.github.io/portfolio" />
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Mairaj",
+    "jobTitle": "Full-Stack Engineer",
+    "description": "Full-Stack Engineer specializing in backend systems and AI-powered applications.",
+    "url": "https://muhd-mairaj.github.io/portfolio",
+    "email": "muhd.mairaj2003@gmail.com",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universiti Malaya" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Kuala Lumpur", "addressCountry": "Malaysia" },
+    "sameAs": [
+      "https://github.com/Muhd-Mairaj",
+      "https://linkedin.com/in/muhd-mairaj-4b194b294"
+    ],
+    "knowsAbout": ["Python","JavaScript","TypeScript","Java","SQL","Django","FastAPI","Node.js","React","Next.js","PostgreSQL","Redis","MongoDB","Docker","RAG","LLM Integration","System Design"]
+  }
+  </script>
 </head>
 <body>
 
